@@ -1,78 +1,108 @@
-📚 Sistema de Cadastro de Livros em C
+# 📚 Book Management System in C
 
-📌 Descrição do Projeto:
-Este projeto é um sistema simples de cadastro de livros, desenvolvido na linguagem C, com o objetivo de praticar conceitos fundamentais de programação estruturada, manipulação de dados e organização em memória.
-O programa funciona como uma biblioteca em memória, permitindo ao usuário cadastrar, excluir e listar livros por meio de um menu interativo no terminal.
+🇧🇷 Portuguese version: [README-PT.md](./README-PT.md)
 
-⚙️ FUNCIONALIDADES
+## 📌 About the Project
 
-📖 Cadastro de livros:
-- Nome;
-- Autor;
-- Editora;
-- Edição;
-- ❌ Exclusão de livros a partir de um índice escolhido pelo usuário;
-- 📋 Listagem de livros;
-- Os livros são exibidos em ordem alfabética pelo nome;
-- 📊 Controle de quantidade máxima de livros cadastrados;
-- 🧠 Uso de estruturas (struct) para organização dos dados;
+This project is a simple **book management system** developed in C.
+It was created to practice core programming concepts such as structured programming, memory management, and data organization.
 
-🧱 Estrutura do Código
+The application works as an in-memory library, allowing users to **add, remove, and list books** through an interactive terminal menu.
 
-O programa utiliza:
-- struct Livro para representar cada livro;
-- Vetor de estruturas para armazenar os livros;
-- Menu interativo com switch-case;
-- Funções auxiliares para: Limpeza do buffer de entrada, Ordenação alfabética utilizando strcmp (Bubble Sort);
-- Manipulação de strings com fgets e strcspn;
+---
 
-🛠️ Tecnologias Utilizadas:
+## ⚙️ Features
 
-- Linguagem C;
-- Biblioteca padrão: stdio.h, stdlib.h, string.h.
+* 📖 Add books with:
 
-▶️ Como Compilar e Executar
+  * Title
+  * Author
+  * Publisher
+  * Edition
+* ❌ Remove books by index
+* 📋 List all books
+* 🔤 Automatic alphabetical sorting by title
+* 📊 Maximum capacity control
+* 🧠 Use of `struct` for data modeling
 
-Utilizando o GCC:
+---
 
+## 🧱 Code Structure
+
+This project uses:
+
+* `struct Livro` to represent books
+* Array of structs for storage
+* `switch-case` for menu control
+* Helper functions for:
+
+  * Input buffer cleaning
+  * Sorting using `strcmp` (Bubble Sort)
+* String handling with `fgets` and `strcspn`
+
+---
+
+## 🛠️ Technologies
+
+* C Programming Language
+* Standard Libraries:
+
+  * `stdio.h`
+  * `stdlib.h`
+  * `string.h`
+
+---
+
+## ▶️ How to Compile and Run
+
+```bash
 gcc main.c -o biblioteca
 ./biblioteca
+```
 
+---
 
-🎯 Objetivos de Aprendizado
+## 🎯 Learning Goals
 
-Este projeto foi desenvolvido com foco em:
-- Lógica de programação;
-- Estruturas de dados básicas;
-- Manipulação de strings em C;
-- Organização de dados em memória;
-- Boas práticas iniciais de programação;
+This project focuses on:
 
-🚀 Possíveis Melhorias Futuras
+* Programming logic
+* Basic data structures
+* String manipulation in C
+* Memory organization
+* Clean code practices
 
-Algumas evoluções pensadas para versões futuras do projeto:
+---
 
-🔍 Sistema de busca eficiente
-- Busca por nome, autor ou editora;
-- Busca parcial (ex: digitar parte do nome do livro);
+## 🚀 Future Improvements
 
-⚡ Otimização para grandes volumes de dados
-- Substituir o Bubble Sort por algoritmos mais eficientes (Quick Sort, Merge Sort);
-- Implementar busca binária após ordenação;
+### 🔍 Search System
 
-💾 Persistência de dados
-- Salvar os livros em arquivo (.txt ou .bin);
-- Carregar os dados ao iniciar o programa;
+* Search by title, author, or publisher
+* Partial search support
 
-🧩 Modularização do código
-- Separar funções em arquivos .c e .h.
+### ⚡ Performance Optimization
 
-🧠 Estruturas de dados avançadas
-Listas encadeadas
-- Árvores binárias de busca;
-- Tabelas hash para busca rápida, ideal para mais de 10.000 livros;
-- Essas melhorias visam tornar o sistema mais escalável, eficiente e próximo de um banco de dados real.
+* Replace Bubble Sort with Quick Sort or Merge Sort
+* Implement binary search
 
-📚 Considerações Finais
+### 💾 Data Persistence
 
-Este projeto representa um passo importante no aprendizado da linguagem C e serve como base para evoluções futuras em estruturas de dados e algoritmos mais avançados.
+* Save data to `.txt` or `.bin` files
+* Load data on startup
+
+### 🧩 Code Modularization
+
+* Split into `.c` and `.h` files
+
+### 🧠 Advanced Data Structures
+
+* Linked lists
+* Binary search trees
+* Hash tables for fast lookup
+
+---
+
+## 📚 Final Notes
+
+This project represents an important step in learning C and serves as a foundation for more advanced data structures and algorithms.
