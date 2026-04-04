@@ -1,7 +1,9 @@
 # 📚 Book Management System in C
 
 🇧🇷 Portuguese version: [README-PT.md](./README-PT.md)
-
+🌐 Available in:
+- 🇺🇸 English
+- 🇧🇷 [Português](./README-PT.md)
 ## 📌 About the Project
 
 This project is a simple **book management system** developed in C.
